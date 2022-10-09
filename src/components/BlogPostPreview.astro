@@ -1,55 +1,23 @@
 ---
 export interface Props {
-	post: any;
+  post: any;
 }
 
 const { post } = Astro.props;
 ---
 
-<article class="post-preview">
-	<header>
-		<p class="publish-date">{post.frontmatter.publishDate}</p>
-		<a href={post.url}><h1 class="title">{post.frontmatter.title}</h1></a>
-	</header>
-	<p>{post.frontmatter.description}</p>
-	<a href={post.url}>Read more</a>
+<article class="rounded card lg:card-side bg-base-100 shadow-xl my-5">
+  <figure><img class="w-full h-64 object-cover" src="https://placeimg.com/200/280/arch" alt="Movie" /></figure>
+  <div class="card-body lg:w-4/6">
+    <header>
+      <p class="publish-date">{post.frontmatter.publishDate}</p>
+      <a href={post.url}><h1 class="font-bold">{post.frontmatter.title}</h1></a>
+      <header>
+        <p class="max-h-fit max-w-prose overflow-hidden">{post.frontmatter.description}</p>
+        <div class="card-actions justify-end">
+          <a class="btn btn-ghost" href={post.url}>Continue lendo →</a>
+        </div>
+      </header>
+    </header>
+  </div>
 </article>
-
-<style>
-	.content :global(main > * + *) {
-		margin-top: 1rem;
-	}
-
-	.post-preview {
-		padding-bottom: 2rem;
-		margin-bottom: 2rem;
-		border-bottom: 4px solid var(--theme-divider);
-	}
-
-	header {
-		align-items: flex-start;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		padding-bottom: 2rem;
-		text-align: left;
-	}
-
-	.title,
-	.author,
-	.publish-date {
-		margin: 0;
-	}
-
-	.publish-date,
-	.author {
-		font-size: 1.25rem;
-		color: var(--theme-text-lighter);
-	}
-
-	.title {
-		font-size: 2.25rem;
-		font-weight: 700;
-		color: var(--theme-text);
-	}
-</style>
