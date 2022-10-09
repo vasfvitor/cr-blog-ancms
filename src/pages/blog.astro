@@ -23,9 +23,6 @@ allPosts = allPosts.sort(
     new Date(b.frontmatter.publishDate).valueOf() -
     new Date(a.frontmatter.publishDate).valueOf()
 );
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 
 <html lang="pt-br">
@@ -40,9 +37,11 @@ allPosts = allPosts.sort(
     <div class="flex-1 flex flex-col lg:flex-row">
       <main class="flex-1 lg:container mx-auto md:mx-8">
         <Breadcrumbs />
-        <section></section>
+        <section aria-label="Blog post list">
+          {allPosts.map((p) => <BlogPostPreview post={p} />)}
+        </section>
       </main>
-      <aside class="lg:w-1/4 bg-yellow-100"><Sobre /></aside>
+      <aside class="lg:w-1/4 bg-current"><Sobre /></aside>
     </div>
     <Footer />
   </body>

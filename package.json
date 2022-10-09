@@ -1,6 +1,6 @@
 {
-  "name": "@example/blog",
-  "version": "0.0.1",
+  "name": "Blog do CR",
+  "version": "0.0.5",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -11,6 +11,8 @@
   },
   "devDependencies": {
     "@astrojs/tailwind": "^2.0.2",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.7",
     "astro": "1.4.6",
     "daisyui": "^2.31.0",
     "tailwindcss": "^3.0.24"

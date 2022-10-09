@@ -1,9 +1,15 @@
 ---
-title: É tipo uma pesquisa que faço para entender melhor como cada aluno já está indo no seu domínio das finanças.
-publishDate: 16 May 2022
-author: Chris Swithinbank
+title: É tipo uma pesquisa que faço para entender melhor como cada aluno já está
+  indo no seu domínio das finanças.
+publishDate: 09/10/2022
+author: Diego Ayres
 authorURL: https://twitter.com/swithinbank
-description: Esses 25 vídeos foram escolhidos entre todos os que recebi. Cada vídeo foi extremamente inspirador e impactante para mim e foi muuuuuuuuito desafiador selecionar apenas esses para essa página. Eu quero agradecer com muito carinho e respeito a cada um que me enviou e dizer que me dói o coração não poder colocar todos aqui.
+thumbnail: /assets/blog/header.png
+description: Esses 25 vídeos foram escolhidos entre todos os que recebi. Cada
+  vídeo foi extremamente inspirador e impactante para mim e foi muuuuuuuuito
+  desafiador selecionar apenas esses para essa página. Eu quero agradecer com
+  muito carinho e respeito a cada um que me enviou e dizer que me dói o coração
+  não poder colocar todos aqui.
 layout: ../../layouts/BlogPost.astro
 ---
 É o seguinte:

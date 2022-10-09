@@ -4,18 +4,28 @@ export interface Props {
 }
 
 const { post } = Astro.props;
+// <p class="publish-date">{post.frontmatter.publishDate}</p>
+// <div class="absolute bg-gradient-to-t from-white h-full w-full bottom-0"> </div>
 ---
 
 <article class="rounded card lg:card-side bg-base-100 shadow-xl my-5">
-  <figure><img class="w-full h-64 object-cover" src="https://placeimg.com/200/280/arch" alt="Movie" /></figure>
+  <figure>
+    <img
+      class="w-full h-64 object-cover"
+      src="https://placeimg.com/200/280/arch"
+      alt="Movie"
+    />
+  </figure>
   <div class="card-body lg:w-4/6">
     <header>
-      <p class="publish-date">{post.frontmatter.publishDate}</p>
       <a href={post.url}><h1 class="font-bold">{post.frontmatter.title}</h1></a>
-      <header>
-        <p class="max-h-fit max-w-prose overflow-hidden">{post.frontmatter.description}</p>
+      <header class="mb-3">
+        <p class="max-h-64 max-w-prose line-clamp-3 overflow-hidden">
+          {post.frontmatter.description}
+        </p>
+
         <div class="card-actions justify-end">
-          <a class="btn btn-ghost" href={post.url}>Continue lendo →</a>
+          <a class="btn btn-outline" href={post.url}>Continue lendo →</a>
         </div>
       </header>
     </header>

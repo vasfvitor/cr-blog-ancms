@@ -1,9 +1,12 @@
 ---
 title: Conheça as Histórias desses alunos .
-publishDate: 16 May 2022
-author: Chris Swithinbank
+publishDate: 09/10/2022
+author: Diego Ayres
 authorURL: https://twitter.com/swithinbank
-description: Sempre que uma turma do Domine suas Finanças chega aos 2 meses de curso, eu peço para os alunos me contarem em vídeo os resultados que já foram possíveis até aquele momento.
+thumbnail: /assets/blog/header.png
+description: Sempre que uma turma do Domine suas Finanças chega aos 2 meses de
+  curso, eu peço para os alunos me contarem em vídeo os resultados que já foram
+  possíveis até aquele momento.
 layout: ../../layouts/BlogPost.astro
 ---
 Sempre que uma turma do Domine suas Finanças chega aos 2 meses de curso, eu peço para os alunos me contarem em vídeo os resultados que já foram possíveis até aquele momento.
